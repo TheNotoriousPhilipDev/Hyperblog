@@ -31,4 +31,16 @@ git log – index.html- Busca los commits en un archivo en específico.
 git log -S “Por contenido”- Buscar los commits con el contenido dentro del archivo.
 git log > log.txt - guardar los logs en un archivo txt
 
+*IMPORTANTE*
+
+Para reescribir la historia del repositorio y eliminar confirmaciones anteriores, se utiliza git reset
+Para deshacer cambios de confirmaciones anteriores de forma segura sin modificar la historia del repositorio,
+
+se emplea git revert.
+
+para crear una branch o rama: 
+
+Git branch <branch name>
+to switch between branchs, use checkout command plus branch name just as shown below
+Git checkout <bran name>
 
