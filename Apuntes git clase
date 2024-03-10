@@ -41,6 +41,6 @@ se emplea git revert.
 para crear una branch o rama: 
 
 Git branch <branch name>
-to switch between branchs, use checkout command plus branch name just as shown below
+to switch between branches, use checkout command plus branch name just as shown below
 Git checkout <bran name>
 
