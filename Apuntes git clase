@@ -35,7 +35,6 @@ git log > log.txt - guardar los logs en un archivo txt
 
 Para reescribir la historia del repositorio y eliminar confirmaciones anteriores, se utiliza git reset
 Para deshacer cambios de confirmaciones anteriores de forma segura sin modificar la historia del repositorio,
-
 se emplea git revert.
 
 para crear una branch o rama: 
@@ -43,4 +42,36 @@ para crear una branch o rama:
 Git branch <branch name>
 to switch between branches, use checkout command plus branch name just as shown below
 Git checkout <bran name>
+
+step-by-step pushing repo *IMPORTANTE*
+
+-git push origin main // como se crea un readme automaticamente en git tenemos que hacer pull para /traer dichos cambios
+-git pull origin main
+-git pull origin master --allow-unrelated-histories
+
+
+git log --all --graph --decorate --oneline muestra el historial de lo que se hizo de una manera mas estetica
+
+puedo poner una especie de alias en los comandos para que no sean tan largos, tal como se muestra a continuación 
+
+alias resumen="git log --all --graph --decorate --oneline"
+resumen
+
+para crear un tag en git se realiza el siguiente comando
+
+git tag -a v0.1 -m "Resultado de las primeras clases del curso" 32c073b
+32c073b hashcode para identificar a que versión del programa esta haciendo referencia
+
+lista de tags
+
+git tag
+
+COMANDO DE RAMAS
+git show-branch mostrar el historial de las ramas
+
+git show-branch all lo muestra todo en detalle
+
+
+
+
 
